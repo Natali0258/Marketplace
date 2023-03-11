@@ -1,0 +1,34 @@
+.productPath{
+   /* display:inline; */
+   display: flex;
+   justify-content: start;
+
+   font-size: 22px;
+   margin-bottom: 10px;
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: 0.03em;
+   color: #5A5757;
+}
+.item{
+   /* display:inline; */
+   display: flex;
+   justify-content: start;
+}
+.name{
+   /* padding-bottom: 10px; */
+   display: flex;
+   justify-content: start;
+}
+.arrow_right{
+   /* transform: rotate(-90deg); */
+   display:inline;
+   color: #5A5757;
+   width: 15px;
+   height:20px;
+
+   padding: 4px 5px 0;
+}

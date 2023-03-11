@@ -1,0 +1,158 @@
+.header_user{
+   display: flex;
+   justify-content: space-between;
+}
+.navbar_nav{
+   display: flex;
+   justify-content: space-between;
+   width: 360px;
+   margin-top: 60px;
+   margin-left: 63px;
+   list-style: none;
+   transition:opacity 0.3s;
+}
+.nav {
+   display: flex;
+   justify-content: space-between;
+}
+li {
+   list-style: none;
+   display: inline-block;
+}
+a:link {
+   text-decoration: none;
+}
+.navbar_nav>li{
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: 0.03em;
+   color: #5A5757;
+   text-decoration: none;
+}
+.navbar_nav>li:hover{
+   color: #979494;
+   cursor: pointer;
+   text-decoration: underline;
+}
+.navbar_nav:hover li:not(:hover){
+   opacity:0.5;
+}
+.profile{
+   width: 49px;
+   height: 49px;
+   margin-top: 60px;
+   margin-left: 38px;
+   background: #D9D9D9;
+   border-radius: 50%;
+   position:relative;
+}
+.user{
+   width: 35px;
+   height: 35px;
+   position:absolute;
+   top: 6px;
+   left:6px;
+}
+@media  screen and (max-width: 1722px)  and (min-width: 1366px){
+   .navbar_nav{
+      width: 300px;
+      margin-left: 40px;
+   }
+   .profile{
+      margin-left: 28px;
+   }
+   .navbarBurgerMenu{
+      display:none
+   }
+}
+@media  screen and (max-width: 1365px)  and (min-width: 1009px){
+   .navbar_nav{
+      width: 280px;
+      margin-left: 10px;
+   }
+   .profile{
+      margin-left: 18px;
+   }
+   .navbarBurgerMenu{
+      display:none
+   }
+}
+@media  screen and (max-width: 1008px)  and (min-width: 652px){
+   .header_user{
+      height: 10px;
+   }
+   .navbar_user_item{
+      display: none;
+   }
+   .profile{
+      display:none;
+   }
+   .navbarBurgerMenu{
+      display:flex;
+      flex-direction: column;
+      padding:0;
+      width: 300px;
+      /* margin: 10px 0 10px 145px;  */
+      margin: 10px 0 10px 20px; 
+   }
+   li{
+      padding: 0;
+   }
+   .userBurgerMenu{
+      display:flex;
+      flex-direction: column; 
+      font-family: Inter,'Gilroy';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 1.2em;
+      letter-spacing: 0.03em;
+      color: white;  
+      padding-bottom: 15px;
+   }   
+   .userBurgerMenu:hover{ 
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: underline;
+   }
+}
+@media  screen and (max-width: 651px)  and (min-width: 295px){
+   .header_user{
+      width: 295px;
+      height: 10px;
+   }
+   .navbar_user_item{
+      display: none;
+   }
+   .profile{
+      display:none;
+   }
+   .navbarBurgerMenu{
+      display:flex;
+      flex-direction: column;
+      padding:0;
+      width: 300px;
+      /* margin: 10px 0 10px 95px;  */
+      margin: 10px 0 10px 30px; 
+   }
+   .userBurgerMenu{
+      display:flex;
+      flex-direction: column; 
+      font-family: Inter,'Gilroy';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 1.2em;
+      letter-spacing: 0.03em;
+      color: white; 
+      padding-bottom: 15px;
+   }   
+   .userBurgerMenu:hover{ 
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: underline;
+   }
+}

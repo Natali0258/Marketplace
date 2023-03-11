@@ -1,0 +1,346 @@
+.header{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+.header_dark{
+   background-color:  #DADADA;
+   height: 107px;
+}
+.header_light{
+   background-color: #FFFFFF;
+   height: 227px;
+}
+.header_dark_wrap{
+   max-width: 1723px;
+   height: 107px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header_light_wrap{
+   max-width: 1723px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+}
+.header_left{
+   display: flex;
+   justify-content: space-between;
+}
+.language_city{
+   display: flex;
+   justify-content: start;
+}
+.language{
+   display: flex;
+   justify-content: center;
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: 0.03em;
+   color: #000000;
+   width: 39px;
+   height: 28px;
+   margin-right: 21px;
+   background-color: transparent;
+   border: 1px solid transparent;
+}
+.address{
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: 0.03em;
+   color: #5A5757;
+   margin-left: 21px;
+   background-color: transparent;
+   border: 1px solid transparent;
+}
+.header_right{
+   flex-wrap: wrap;
+}
+.burgerMenu{
+   display:none;
+}
+.navbar{
+   display: flex;
+   justify-content: start;
+   align-items: flex-end;
+   height: 96px;
+}
+.logo{
+   width: 152px;
+   font-family: 'SF Pro Display'; 
+   font-style: normal;
+   font-weight: 900;
+   font-size: 40px;
+   line-height: 120%;
+   font-family: "Inter", sans-serif;
+   color: #000000;
+}
+.catalog{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 196px;
+   height: 56px;
+   margin-left: 84px;
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 30px;
+   line-height: 36px;
+   letter-spacing: 0.03em;
+   color: #000000;
+   border: 1px solid #000000;
+}
+.search{
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+   align-items: center;
+   width: 751px;
+   height: 55px;
+   margin-left: 20px;
+   padding-left: 20px;
+   border: 1px solid #000000;
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: 0.03em;
+   color: #5A5757;
+}
+@media  screen and (max-width: 1722px)  and (min-width: 1366px){
+   .header_dark_wrap{
+      max-width: 1366px;
+      /* margin-top: 0;  */
+   }
+   .header_light_wrap{
+      max-width: 1366px;
+   }
+   .logo{
+      font-weight: 700;
+      font-size: 32px;
+   }
+   .catalog{
+      width: 176px;
+      margin-left: 44px;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 32px;
+   }
+   .search{
+      width: 500px;
+      height: 55px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+   }
+}
+@media  screen and (max-width: 1365px)  and (min-width: 1009px){
+   .header_light{
+      height: 247px;
+   }
+   .header_dark_wrap{
+      flex-direction: column;
+      max-width: 1009px;
+      margin: 0 auto;
+   }
+   .header_light_wrap{
+      max-width: 1009px;
+   }
+   .header_left{
+      margin-top: 10px;
+   }
+   .logo{
+      font-weight: 600;
+      font-size: 30px;
+   }
+   .catalog{
+      width: 156px;
+      margin-left: 20px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 26px;
+   }
+   .search{
+      width: 280px;
+      height: 55px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+   }
+   .navbar{
+      height: 96px;
+   }
+}
+@media  screen and (max-width: 1008px)  and (min-width: 652px){
+   .header_right{
+      display:none;
+   }
+   .header_light{
+      height: 230px;
+   }
+   .header_dark_wrap{
+      max-width: 652px;
+      margin: 0 auto;
+   }
+   .header_light_wrap{
+      max-width: 652px;
+   }
+   .burgerMenu{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+   }
+   .burgerButton{
+      width: 24px;
+      height: 15px;
+      margin-right: 40px;
+      position: relative;
+      cursor: pointer;
+      background-color:#DADADA;
+   }
+   .burgerButton::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 24px;
+      height: 3px;
+      background-color: black;
+   }
+   .burgerButton span{
+      position: absolute;
+      top: 6px;
+      width: 24px;
+      height: 3px;
+      background-color: black;
+   }
+   .burgerButton::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 24px;
+      height: 3px;
+      background-color: black;
+   }
+   .navbar{
+      flex-wrap: wrap;
+      margin: 10px 0 10px;
+   }
+   .logo{
+      width: 130px;
+      font-weight: 600;
+      font-size: 24px;
+   }
+   .catalog{
+      width: 136px;
+      margin-left: 20px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 26px;
+   }
+   .search{
+      width: 300px;
+      height: 55px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+   }
+}
+@media  screen and (max-width: 651px)  and (min-width: 295px){
+   .header_right{
+      display:none;
+   }
+   .header_light{
+      height: 460px;
+   }
+   .header_dark_wrap{
+      /* flex-direction: column; */
+      max-width: 295px;
+      margin: 0 auto;
+   }
+   .header_light_wrap{
+      max-width: 295px;
+   }
+   .header_left{
+      display: flex;
+      flex-direction: column;
+   }
+   .address{
+      width: 200px;
+      margin-left: 0;
+   }
+   .burgerMenu{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+   }
+   .burgerButton{
+      width: 24px;
+      height: 15px;
+      margin-right: 10px;
+      position: relative;
+      cursor: pointer;
+      background-color:#DADADA;
+   }
+   .burgerButton::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 24px;
+      height: 3px;
+      background-color: black;
+   }
+   .burgerButton span{
+      position: absolute;
+      top: 6px;
+      width: 24px;
+      height: 3px;
+      background-color: black;
+   }
+   .burgerButton::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 24px;
+      height: 3px;
+      background-color: black;
+   }
+
+   .navbar{
+      flex-wrap: wrap;
+      margin: 20px 0 20px;
+   }
+   .logo{
+      width: 130px;
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 10px;
+   }
+   .catalog{
+      width: 150px;
+      margin-left: 10px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 10px;
+   }
+   .search{
+      width: 290px;
+      height: 55px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      margin-left: 0;
+      margin-bottom: 10px;
+   }
+}

@@ -1,0 +1,42 @@
+.card{
+   background: #DADADA;
+   border: 1px solid #DADADA ;
+   /* width: 517px; */
+   width: 32%;
+   height: 281px;
+   margin-bottom: 30px;
+   overflow: hidden;
+}
+.box{
+   /* width: 100%; */
+   overflow: hidden;
+}
+.image{
+   width: 100%;
+   transition: transform 500ms ease;
+}
+.image:hover{
+   transform: scale(1.2);
+   cursor: pointer;
+}
+@media  screen and (max-width: 1722px)  and (min-width: 1366px){
+
+}
+@media  screen and (max-width: 1365px)  and (min-width: 1009px){
+   .card{
+      width: 48%;
+      margin-bottom: 20px;
+   }
+}
+@media  screen and (max-width: 1008px)  and (min-width: 652px){
+   .card{
+      width: 100%;
+      margin-bottom: 20px;
+   }
+}
+@media  screen and (max-width: 651px)  and (min-width: 295px){
+   .card{
+      width: 100%;
+      margin-bottom: 20px;
+   }
+}

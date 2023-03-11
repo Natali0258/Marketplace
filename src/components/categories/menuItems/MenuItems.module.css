@@ -1,0 +1,85 @@
+.wrap{
+   z-index:20;
+}
+.menuItem {
+   width: 160px;
+   padding: 0;
+   color: black;
+   list-style: none;
+   align-items: center;
+   position: relative;
+}
+a:hover {
+   width: 200px;
+   height: 40px;
+   color: red;
+   text-decoration: underline;
+}
+.button{
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 22px;
+   letter-spacing: 0.03em;
+   width: 160px;
+   min-height: 60px;
+   background: rgb(214, 213, 213);
+   color: black;
+   list-style: none;
+   align-items: center;
+}
+.button:hover {
+   background-color: rgb(146, 144, 144);
+}
+.arrow_right{
+   transform: rotate(-90deg);
+   color: black;
+}
+@media  screen and (max-width: 1722px)  and (min-width: 1366px){
+   .menuItem {
+      width: 160px;
+   }
+   .button {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 22px;
+      width: 160px;
+   } 
+}
+@media  screen and (max-width: 1365px)  and (min-width: 1009px){
+   .menuItem {
+      width: 130px;
+   }
+   .button {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 20px;
+      width: 130px;
+   } 
+}
+@media  screen and (max-width: 1008px)  and (min-width: 652px){
+   .menuItem {
+      width: 90px;
+   }
+   .button {
+      font-weight: 200;
+      font-size: 18px;
+      line-height: 22px;
+      width: 90px;
+      min-height: 70px;
+      word-wrap: break-word;
+   } 
+}
+@media  screen and (max-width: 651px)  and (min-width: 295px){
+   .menuItem {
+      width: 130px;
+      min-height: 60px;
+   }
+   .button {
+      font-weight: 200;
+      font-size: 18px;
+      line-height: 22px;
+      width: 130px;
+   } 
+}

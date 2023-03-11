@@ -1,0 +1,35 @@
+.droupDown{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+.city{
+   position: relative;
+   width: 140px;
+   height: 28px;
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: 0.03em;
+   color: #000000;
+   background-color: transparent;
+   border: 1px solid transparent;
+}
+.container {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   top: 35px;
+   left: 0;
+   background-color: white;
+   border: 1px solid #000000;
+}
+.cityList{
+   padding: 5px;
+}
+.cityList:hover{
+   background-color: rgb(195, 195, 245);
+   cursor: pointer;
+}

@@ -1,0 +1,137 @@
+.header_right{
+   display: flex;
+   justify-content: space-between;
+}
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+ul{
+   padding:0;
+}
+li {
+   list-style: none;
+   /* display: inline-block; */
+}
+a:link {
+   text-decoration: none;
+}
+.navbar_company{
+   flex-wrap: wrap;
+}
+.navbar_company{
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 21px;
+   letter-spacing: 0.03em;
+   color: #5A5757;
+   border: 1px solid transparent;
+   margin-left: 25px;
+   padding: 0;
+   cursor: pointer;
+}
+.navbar_company:hover{
+   color: #0f0f0f;
+   border: 1px solid #0f0f0f;
+   cursor: pointer;
+}
+@media  screen and (max-width: 1722px)  and (min-width: 1366px){
+   /* .navbar_company{
+      padding: 0; 
+      width: 1366px;
+   } */
+   .navbarBurgerMenu{
+      display:none
+   }
+   .companyBurgerMenu{
+      display:none   
+   }
+}
+@media  screen and (max-width: 1365px)  and (min-width: 1009px){
+   .nav{
+      width: 1009px;
+      margin-top: 0;
+   } 
+   .navbar_company{
+      padding: 0; 
+      margin-left: 0;
+   }
+   .navbarBurgerMenu{
+      display:none
+   }
+   .companyBurgerMenu{
+      display:none   
+   }
+}
+@media  screen and (max-width: 1008px)  and (min-width: 652px){
+   /* .navbar_company{
+      padding: 0;
+      width: 652px;
+   }
+   .navbar_company>.link{
+      margin-left: 0;
+   } */
+   .navbar_company{
+      display: none;
+   }
+   .navbarBurgerMenu{
+      display:flex;
+      flex-direction: column;
+      width: 400px;
+      /* margin: 30px 0 10px 250px;  */
+      padding: 0;
+      margin: 30px 0 10px 0; 
+   }
+   .companyBurgerMenu{
+      display:flex;
+      flex-direction: column; 
+      font-family: Inter,'Gilroy';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 1.2em;
+      letter-spacing: 0.03em;
+      color: white; 
+      padding-bottom: 15px;
+   }
+   
+   .companyBurgerMenu:hover{ 
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: underline;
+   }
+}
+@media  screen and (max-width: 651px)  and (min-width: 295px){
+   .navbar_company{
+      display: none;
+   }
+   .navbarBurgerMenu{
+      display:flex;
+      flex-direction: column;
+      width: 300px;
+      /* margin: 30px 0 10px 130px;  */
+      padding: 0;
+      margin: 30px 0 10px 0;
+   }
+   .companyBurgerMenu{
+      display:flex;
+      flex-direction: column; 
+      font-family: Inter,'Gilroy';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 1.2em;
+      letter-spacing: 0.03em;
+      padding-left: 20px;
+      color: white; 
+      padding-bottom: 15px;
+   }
+   .companyBurgerMenu:hover{ 
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: underline;
+   }
+}

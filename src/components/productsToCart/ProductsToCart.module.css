@@ -1,0 +1,78 @@
+.myShopping {
+   box-sizing: border-box;
+   width: 100%;
+   padding: 10px;
+   background: #636363;
+}
+.product{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   margin-top: 10px;
+}
+.image {
+   padding: 10px;
+   width: 55px;
+   height: 70px;
+}
+.name, .text {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.product p,
+.product b,
+.product img{
+   margin: 0 20px 10px 0;
+   color: white;
+}
+.delete_icon{
+   width:20px;
+   height:30px;
+   color: rgba(247, 5, 5, 0.521);
+   position: relative;
+   top: -3px; 
+   padding-right: 20px;
+   cursor: pointer;
+   transition: transform 500ms ease;
+}
+.delete_icon:hover{
+   color: rgb(240, 12, 12);
+   transform: scale(1.5);
+}
+.summa{
+   color: white;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 30px;
+   letter-spacing: 0.03em;
+   padding-left: 10px;
+}
+.showNithing {
+   font-size: 22px;
+   text-align: center;
+   color: white;
+}
+@media screen and (max-width: 1722px) and (min-width: 1366px) {
+   
+}
+@media screen and (max-width: 1365px) and (min-width: 1009px) {
+   
+}
+@media screen and (max-width: 1008px) and (min-width: 652px) {
+   .myShopping{
+      padding: 0;
+      margin-left: 0;
+      width: 100%;
+   }
+}
+@media screen and (max-width: 651px) and (min-width: 295px) {
+   .myShopping {
+      padding: 0;
+      width: 100%;
+      margin-left: 0;
+   }
+}

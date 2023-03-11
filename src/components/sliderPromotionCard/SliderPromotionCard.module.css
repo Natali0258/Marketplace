@@ -1,0 +1,19 @@
+.card{
+   box-sizing: border-box;
+   height: 295px;
+   background: #FFFFFF;
+   margin-right: 0px;
+}
+.box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 295px;
+   background: #c7e5f3;
+}
+.product{
+   font-weight: 900;
+   font-size: 18px;
+   line-height: 150%;
+   color: #4D4D4D;
+}

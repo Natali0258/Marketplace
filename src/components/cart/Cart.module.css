@@ -1,0 +1,117 @@
+.cart {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-color: #ffffff;
+}
+.wrapper {
+   max-width: 1723px;
+   margin: 0 auto;
+   background-color: #ffffff;
+}
+.name {
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 32px;
+   line-height: 40px;
+   letter-spacing: 0.03em;
+   color: #5a5757;
+}
+.container {
+   display: flex;
+   justify-content: space-between;
+}
+.go_to_checkout {
+   width: 40%;
+   height: 400px;
+   background: #dadada;
+   margin-left: 40px;
+   text-align: center;
+   margin-top: 10px;
+}
+.button {
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 30px;
+   letter-spacing: 0.03em;
+   background: transparent;
+   color: #5a5757;
+   border: 1px solid #5a5757;
+   padding: 5px 10px;
+   margin-top: 40px;
+}
+.recommendations,
+.offer {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+h2 {
+   padding: 0;
+   font-family: "Gilroy";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 39px;
+   letter-spacing: 0.03em;
+   color: #5a5757;
+}
+.offer {
+   margin-top: 50px;
+}
+@media screen and (max-width: 1722px) and (min-width: 1366px) {
+   .wrapper {
+      width: 1366px;
+   }
+}
+@media screen and (max-width: 1365px) and (min-width: 1009px) {
+   .wrapper {
+      width: 1009px;
+   }
+   .go_to_checkout {
+      height: 350px;
+   }
+   .button {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 25px;
+   }
+   h2,
+   р4 {
+      padding: 0;
+   }
+}
+@media screen and (max-width: 1008px) and (min-width: 652px) {
+   .wrapper {
+      width: 652px;
+   }
+   .container {
+      flex-direction: column;
+   }
+   /* .myShopping, */
+   .go_to_checkout {
+      padding: 0;
+      margin-left: 0;
+      width: 100%;
+   }
+}
+@media screen and (max-width: 651px) and (min-width: 295px) {
+   .wrapper {
+      width: 295px;
+   }
+   .container {
+      flex-direction: column;
+   }
+   /* .myShopping, */
+   .go_to_checkout {
+      padding: 0;
+      width: 100%;
+      margin-left: 0;
+   }
+   .button {
+      width: 250px;
+   }
+}

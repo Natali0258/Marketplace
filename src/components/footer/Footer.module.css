@@ -1,0 +1,11 @@
+.footer{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 107px;
+   background-color:  #DADADA;
+}
+.wrapper{
+   max-width: 1723px;
+   margin: 0 auto;
+}

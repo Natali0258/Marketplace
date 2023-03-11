@@ -1,0 +1,78 @@
+.feedback{
+   display: flex;
+   flex-direction: column;
+   /* border: 1px solid #000000; */
+   margin-bottom: 20px;
+   /* height: 164px; */
+   height: 250px;
+   overflow:hidden;
+}
+.feedback_wrap{
+   margin: 19px;
+   overflow:hidden;
+}
+.wrap{
+   display: flex;
+   justify-content: start;
+   text-align: start;
+}
+.text{
+   margin-top: 10px;
+   font-size: 18px;
+}
+.profile{
+   width: 49px;
+   height: 49px;
+   margin-top: 10px;
+   margin-right: 20px;
+   background: #fff;
+   border: 1px solid #D9D9D9;
+   border-radius: 50%;
+   position:relative;
+}
+.boyer{
+   color: #D9D9D9;
+   width: 35px;
+   height: 35px;
+   position:absolute;
+   top: 6px;
+   left:6px;
+}
+.info{
+   display:flex;
+   flex-direction:column;
+   margin:0 20px 10px;
+}
+.info>p{
+   padding: 0;
+}
+.boyerName{
+   padding: 0;
+}
+.photos{
+   display: flex;
+   justify-content: start;
+}
+.photo{
+   width: 49px;
+   height: 49px;
+}
+@media  screen and (max-width: 1722px)  and (min-width: 1366px){
+   .feedback{
+      height: 180px;
+   }
+}
+@media  screen and (max-width: 1365px)  and (min-width: 1009px){
+   .feedback{
+      height: 180px;
+   }
+   .feedback_wrap{
+      margin: 18px;
+   }
+}
+@media  screen and (max-width: 1008px)  and (min-width: 652px){
+
+}
+@media  screen and (max-width: 651px)  and (min-width: 295px){
+
+}

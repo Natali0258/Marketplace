@@ -1,0 +1,35 @@
+.orders{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-color:#FFFFFF;
+}
+.wrapper{
+   max-width: 1723px; 
+   margin: 0 auto;
+   background-color: #FFFFFF;
+}
+.name{
+   font-size: 30px;
+   color:black;
+}
+@media  screen and (max-width: 1722px)  and (min-width: 1366px){
+   .wrapper{
+      width: 1366px;
+   }
+}
+@media  screen and (max-width: 1365px)  and (min-width: 1009px){
+   .wrapper{
+      width: 1009px;
+   }
+}
+@media  screen and (max-width: 1008px)  and (min-width: 652px){
+   .wrapper{
+      width: 652px;
+   }
+}
+@media  screen and (max-width: 651px)  and (min-width: 295px){
+   .wrapper{
+      width: 295px;
+   }
+}

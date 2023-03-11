@@ -1,0 +1,67 @@
+.DropDown {
+   width: 160px;
+   color: black;
+   padding: 0;
+}
+.DropDownRight {
+   width: 160px;
+   color: black;
+   margin-top: -60px;
+   margin-left: 160px;
+   padding: 0;
+}
+.submenu {
+   height: 40px;
+   background: rgb(214, 213, 213);
+   color: black;
+   list-style: none;
+   align-items: center;
+   text-decoration: none;
+   position: relative;
+}
+.button:hover {
+   background-color: gray;
+}
+a {
+   text-decoration: none;
+}
+.submenu:hover {
+   background-color: gray;
+}
+@media  screen and (max-width: 1722px)  and (min-width: 1366px){
+   .DropDown {
+      width: 160px;
+   }
+   .DropDownRight {
+      width: 160px;
+   }
+}
+@media  screen and (max-width: 1365px)  and (min-width: 1009px){
+   .DropDown {
+      width: 130px;
+   }
+   .DropDownRight {
+      width: 130px;
+      margin-left: 130px;
+   }  
+}
+@media  screen and (max-width: 1008px)  and (min-width: 652px){
+   .DropDown {
+      width: 90px;
+   }
+   .DropDownRight {
+      width: 90px;
+      margin-top: -70px;
+      margin-left: 90px;
+   }
+}
+@media  screen and (max-width: 651px)  and (min-width: 295px){
+   .DropDown {
+      width: 130px;
+   }
+   .DropDownRight {
+      width: 130px;
+      margin-top: -40px;
+   margin-left: 130px;
+   }
+}
