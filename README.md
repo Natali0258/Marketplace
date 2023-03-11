@@ -1,3 +1,6 @@
+## Marketplace
+Пет-проект “Marketplace” – это сервис для продажи и покупки товаров, находится в стадии разработки, в качестве сервера используется JSON-server.
+
 <<<<<<< HEAD
 # Getting Started with Create React App
 
