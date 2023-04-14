@@ -16,13 +16,29 @@ export const USER_ACTIONS = {
    //Закрытие модального окна
    CLOSE_MODAL: 'CLOSE_MODAL',
    //Вызов формы регистрации/авторизации
-   GET_REG_FORM: 'GET_REG_FORM',
+   GET_REG_AND_LOG_FORM: 'GET_REG_AND_LOG_FORM',
    //Закрыть форму регистрации/авторизации
+   CLOSE_REG_AND_LOG_FORM: 'CLOSE_REG_AND_LOG_FORM',
+   //Вызов формы регистрации
+   GET_REG_FORM: 'GET_REG_FORM',
+   //Закрыть форму регистрации
    CLOSE_REG_FORM: 'CLOSE_REG_FORM',
+   //Вызов формы авторизации
+   GET_LOG_FORM: 'GET_LOG_FORM',
+   //Закрыть форму авторизации
+   CLOSE_LOG_FORM: 'CLOSE_LOG_FORM',
    //Регистрация пользователя
    REG_USER_STARTED: 'REG_USER_STARTED',
    REG_USER_SUCCESS: 'REG_USER_SUCCESS',
-   REG_USER_ERROR: 'REG_USER_ERROR'
+   REG_USER_ERROR: 'REG_USER_ERROR',
+   //Закрыть сообщение об ошибке регистрации
+   CLOSE_REG_USER_ERROR: 'CLOSE_REG_USER_ERROR',
+   //Авторизация пользователя
+   LOG_USER_STARTED: 'LOG_USER_STARTED',
+   LOG_USER_SUCCESS: 'LOG_USER_SUCCESS',
+   LOG_USER_ERROR: 'LOG_USER_ERROR',
+   //Закрыть сообщение об ошибке авторизации
+   CLOSE_LOG_USER_ERROR: 'CLOSE_LOG_USER_ERROR'
 }
 
 //Вызов бургер-меню
@@ -78,15 +94,39 @@ export const closeModal = () => {
    }
 }
 //Вызов формы регистрации/авторизации
+export const getRegAndLogForm = () => {
+   return {
+      type: USER_ACTIONS.GET_REG_AND_LOG_FORM
+   }
+}
+//Закрыть форму регистрации/авторизации
+export const closeRegAndLogForm = () => {
+   return {
+      type: USER_ACTIONS.CLOSE_REG_AND_LOG_FORM
+   }
+}
+//Вызов формы регистрации
 export const getRegForm = () => {
    return {
       type: USER_ACTIONS.GET_REG_FORM
    }
 }
-//Закрыть форму регистрации/авторизации
+//Закрыть форму регистрации
 export const closeRegForm = () => {
    return {
       type: USER_ACTIONS.CLOSE_REG_FORM
+   }
+}
+//Вызов формы авторизации
+export const getLogForm = () => {
+   return {
+      type: USER_ACTIONS.GET_LOG_FORM
+   }
+}
+//Закрыть форму авторизации
+export const closeLogForm = () => {
+   return {
+      type: USER_ACTIONS.CLOSE_LOG_FORM
    }
 }
 //Регистрация пользователя
@@ -101,9 +141,38 @@ export const regUserSuccess = (id, email, password) => {
       id, email, password
    }
 }
-export const regUserError = (id, email, password) => {
+export const regUserError = () => {
    return {
-      type: USER_ACTIONS.REG_USER_ERROR,
-      id, email, password
+      type: USER_ACTIONS.REG_USER_ERROR
+   }
+}
+//Закрыть сообщение об ошибке регистрации
+export const closeRegUserError = () => {
+   return {
+      type: USER_ACTIONS.CLOSE_REG_USER_ERROR
+   }
+}
+//Авторизация пользователя
+export const logUserStarted = () => {
+   return {
+      type: USER_ACTIONS.LOG_USER_STARTED
+   }
+}
+export const logUserSuccess = (id, nickname, email, password) => {
+   console.log(id, nickname, email, password)
+   return {
+      type: USER_ACTIONS.LOG_USER_SUCCESS,
+      id, nickname, email, password
+   }
+}
+export const logUserError = () => {
+   return {
+      type: USER_ACTIONS.LOG_USER_ERROR
+   }
+}
+//Закрыть сообщение об ошибке авторизации
+export const closeLogUserError = () => {
+   return {
+      type: USER_ACTIONS.CLOSE_LOG_USER_ERROR
    }
 }

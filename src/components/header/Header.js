@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { getBurgerMenu } from '../../store/actions/userActions';
 import CityDroupDown from '../cityDroupDown/CityDroupDown';
 import NavbarCompany from '../navbar/navbarCompany/NavbarCompany';
@@ -49,7 +50,7 @@ const Header = () => {
             <div className={css.header_light}>
                <div className={css.header_light_wrap}>
                   <div className={css.navbar}>
-                     <div className={css.logo}><span>МАРКЕТ ПЛЕЙС</span></div>
+                     <Link to={'/'} className={css.logo}><span>МАРКЕТ ПЛЕЙС</span></Link>
                      <div className={css.catalog}>КАТАЛОГ</div>
                      <div className={css.search}>Искать</div>
                      <NavbarUser menu={userMenu} />

@@ -4,9 +4,11 @@ import CityDroupDown from '../cityDroupDown/CityDroupDown';
 import NavbarCompany from '../navbar/navbarCompany/NavbarCompany';
 import NavbarUser from '../navbar/navbarUser/NavbarUser';
 import BurgerMenu from '../burgerMenu/BurgerMenu';
-import { getModal, getRegForm } from '../../store/actions/userActions';
+import { getModal } from '../../store/actions/userActions';
+import { getRegAndLogFormSeller, outputSeller } from '../../store/actions/sellerActions';
 import css from './HeaderSeller.module.css';
 import { sellerMenu, sellerLightMenu } from '../../data/constants';
+import { useNavigate } from 'react-router-dom';
 
 const HeaderSeller = () => {
    const dispatch = useDispatch();
@@ -15,9 +17,16 @@ const HeaderSeller = () => {
    const isAuthSeller = useSelector(state => state.seller.isAuthSeller)
    console.log('isAuthSeller=', isAuthSeller)
 
-   const openRegistrationForm = (e) => {
+   const navigate = useNavigate()
+
+   const handleSignin = (e) => {
       dispatch(getModal())
-      dispatch(getRegForm())
+      dispatch(getRegAndLogFormSeller())
+   }
+
+   const handleOutput = (e) => {
+      dispatch(outputSeller())
+      navigate('/')
    }
 
    return (
@@ -29,14 +38,18 @@ const HeaderSeller = () => {
                   <CityDroupDown />
                   <div className={css.logo}><span>МАРКЕТ ПЛЕЙС</span></div>
 
-                  <button className={css.enter_second}
-                     onClick={openRegistrationForm}>ВОЙТИ</button>
+                  {isAuthSeller ?
+                     <button className={css.enter_second}
+                        onClick={handleOutput}>ВЫЙТИ</button> :
+                     <button className={css.enter_second}
+                        onClick={handleSignin}>ВОЙТИ</button>
+                  }
                </div>
 
                <div className={css.header_dark_right}>
                   <NavbarCompany active={isBurgerMenu} menu={sellerMenu} />
                   <button className={css.enter_first}
-                     onClick={openRegistrationForm}>ВОЙТИ</button>
+                     onClick={handleSignin}>ВОЙТИ</button>
                </div>
 
                <nav className={css.burgerMenu}>

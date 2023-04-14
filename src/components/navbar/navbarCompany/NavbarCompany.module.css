@@ -35,7 +35,8 @@ a:link {
 }
 .navbar_company:hover{
    color: #0f0f0f;
-   border: 1px solid #0f0f0f;
+   text-decoration: underline;
+   /* border: 1px solid #0f0f0f; */
    cursor: pointer;
 }
 @media  screen and (max-width: 1722px)  and (min-width: 1366px){

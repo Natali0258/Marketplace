@@ -1,0 +1,169 @@
+.register{
+   width: 839px;
+   height: 711px;
+   margin: auto auto;
+   background: #D9D9D9;
+   z-index:100;
+}
+.cross{
+   display: flex;
+   justify-content: space-between;
+}
+
+.form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.icon_cross{
+   /* float: right; */
+   width: 30px;
+   height: 30px;
+   color: #636363;
+   margin: 20px 20px 0;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   margin-top: 60px;
+}
+.label, .button{
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 30px;
+   letter-spacing: 0.03em;
+}
+.label{
+   color: #5A5757;
+   height: 25px;
+   margin-top: 30px;
+}
+.container>input{
+   width: 400px;
+   height: 30px;
+   margin: 10px 0 10px;
+}
+.btn{
+   display: flex;
+   justify-content: center;
+   align-self: center;
+}
+.button__submit{
+   padding: 10px 20px;
+   margin: 40px 0 30px;
+   margin-bottom:20px;
+   background: #5A5757;
+   border: 1px solid #5A5757;
+   border-radius: 20px;
+   color:white;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 20px;
+   transition: transform 300ms ease;
+}
+.button__submit:hover{
+   cursor: pointer;
+   transform: scale(1.1)
+}
+.link{
+   margin-left: 40px;
+}
+@media  screen and (max-width: 1722px)  and (min-width: 1366px){
+   
+}
+@media  screen and (max-width: 1365px)  and (min-width: 1009px){
+   .register{
+   width: 600px;
+   height: 550px;
+   }
+   .container{
+      margin-top: 10px;
+   }
+   .label, .button__submit{
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.03em;
+   }
+   .label{
+      height: 25px;
+      margin-top: 10px;
+   }
+   .container>input{
+      width: 300px;
+      height: 30px;
+      margin: 10px 0 10px;
+   }
+   .button__submit{
+      padding: 10px 20px;
+      margin-top: 30px 0 10px;
+   }
+}
+@media  screen and (max-width: 1008px)  and (min-width: 652px){
+   .register{
+      width: 500px;
+      height: 570px;
+      }
+      .container{
+         margin-top: 20px;
+      }
+      .label, .button__submit{
+         font-family: 'Gilroy';
+         font-style: normal;
+         font-weight: 600;
+         font-size: 16px;
+         line-height: 20px;
+         letter-spacing: 0.03em;
+      }
+      .label{
+         height: 25px;
+         margin-top: 20px;
+      }
+      .container>input{
+         width: 300px;
+         height: 25px;
+         margin: 10px 0 10px;
+      }
+      .button__submit{
+         padding: 10px 20px;
+         margin-top: 30px;
+      }
+      .link{
+         margin-left: 10px;
+      }
+}
+@media  screen and (max-width: 651px)  and (min-width: 295px){
+   .register{
+      width: 275px;
+      height: 490px;
+      }
+      .container{
+         margin-top: 0;
+      }
+      .label, .button__submit{
+         font-family: 'Gilroy';
+         font-style: normal;
+         font-weight: 600;
+         font-size: 16px;
+         line-height: 20px;
+         letter-spacing: 0.03em;
+      }
+      .label{
+         height: 25px;
+         margin: 15px 0 0 10px;
+      }
+      .container>input{
+         width: 240px;
+         height: 25px;
+         margin: 10px 0 10px 10px;
+      }
+      .button__submit{
+         padding: 10px 20px;
+         margin: 10px 0 10px;
+      }
+}

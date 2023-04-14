@@ -1,0 +1,20 @@
+.not__found{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 100vh;
+   background-color:#FFFFFF;
+}
+.wrapper{
+   max-width: 1723px; 
+   margin: 0 auto;
+   background-color: #FFFFFF;
+}
+.title, .text{
+   color: #5A5757;
+   text-align: center;
+}
+.text{
+   font-size: 26px;
+   margin: 10px;
+}

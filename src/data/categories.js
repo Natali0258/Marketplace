@@ -115,7 +115,7 @@ const categories = {
       },
       {
          id: 221,
-         name: "Комрьютеры",
+         name: "Компьютеры",
          category1: "Электроника",
          category2: "Комрьютеры и ПО",
       },

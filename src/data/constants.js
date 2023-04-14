@@ -1,7 +1,7 @@
 const buyerMenu = [
    {
       id: 1,
-      path: "/sellerMainPage",
+      path: "/sellerInfoPage",
       name: "Стать продавцом"
    },
    {
@@ -74,52 +74,52 @@ const userMenu = [
 const sellerLightMenu = [
    {
       id: 1,
-      path: "/seller",
+      path: "/sellerInfoPage/mainPage",
       name: "Главная"
    },
    {
       id: 2,
-      path: "/",
+      path: "/sellerInfoPage/products",
       name: "Товары"
    },
    {
       id: 3,
-      path: "/",
+      path: "/sellerInfoPage/prices",
       name: "Цены"
    },
    {
       id: 4,
-      path: "/",
+      path: "/sellerInfoPage/logistics",
       name: "Поставки и вывоз"
    },
    {
       id: 5,
-      path: "/",
+      path: "/sellerInfoPage/orders",
       name: "Заказы"
    },
    {
-      id: 5,
-      path: "/",
+      id: 6,
+      path: "/sellerInfoPage/finance",
       name: "Финансы"
    },
    {
-      id: 5,
-      path: "/",
+      id: 7,
+      path: "/sellerInfoPage/analytics",
       name: "Аналитика"
    },
    {
-      id: 5,
-      path: "/",
+      id: 8,
+      path: "/sellerInfoPage/storage",
       name: "Склады"
    },
    {
-      id: 5,
-      path: "/",
+      id: 9,
+      path: "/sellerInfoPage/promotion",
       name: "Продвижение"
    },
    {
-      id: 5,
-      path: "/",
+      id: 10,
+      path: "/sellerInfoPage/comments",
       name: "Отзывы"
    }
 ]

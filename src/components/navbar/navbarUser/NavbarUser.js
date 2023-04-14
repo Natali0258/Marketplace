@@ -1,31 +1,14 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { goToSellerInterface } from '../../../store/actions/sellerActions';
-import { getModal, getRegForm } from '../../../store/actions/userActions';
-import { closeBurgerMenu } from '../../../store/actions/userActions';
+import { Link, useNavigate } from 'react-router-dom';
+import { getModal, closeBurgerMenu, getRegAndLogForm, output } from '../../../store/actions/userActions';
 import { FaUser } from 'react-icons/fa';
 import css from './NavbarUser.module.css';
 
 const NavbarUser = ({ active, menu }) => {
    const dispatch = useDispatch();
    const isAuth = useSelector(state => state.user.isAuth)
-   // const menu = [
-   //    {
-   //       id: 1,
-   //       path: "/orders",
-   //       name: "Заказы"
-   //    },
-   //    {
-   //       id: 2,
-   //       path: "/favorites",
-   //       name: "Избранное"
-   //    },
-   //    {
-   //       id: 3,
-   //       path: "/cart",
-   //       name: "Корзина"
-   //    }
-   // ]
+
+   const navigate = useNavigate()
 
    const handleClick = (e) => {
       //console.log('корзина', e.target.path)
@@ -33,9 +16,14 @@ const NavbarUser = ({ active, menu }) => {
       dispatch(closeBurgerMenu())
    }
 
-   const openRegistrationForm = (e) => {
+   const handleSignin = (e) => {
       dispatch(getModal())
-      dispatch(getRegForm())
+      dispatch(getRegAndLogForm())
+   }
+
+   const handleOutput = (e) => {
+      dispatch(output())
+      navigate('/')
    }
 
    return (
@@ -56,8 +44,12 @@ const NavbarUser = ({ active, menu }) => {
          </nav>
 
          <div className={css.profile}>
-            <FaUser className={css.user} onClick={openRegistrationForm} />
+            <FaUser className={css.user} />
          </div>
+
+         {isAuth ?
+            <button className={css.btn} onClick={handleOutput}>Выйти</button> :
+            <button className={css.btn} onClick={handleSignin}>Войти</button>}
 
          {/* {isAuth &&
             (<>

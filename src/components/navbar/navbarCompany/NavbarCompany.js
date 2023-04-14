@@ -5,12 +5,12 @@ import { closeBurgerMenu } from '../../../store/actions/userActions';
 import css from './NavbarCompany.module.css';
 
 const NavbarCompany = ({ active, menu }) => {
-   console.log('active=', active)
-   console.log('menu=', menu)
+   //console.log('active=', active)
+   //console.log('menu=', menu)
    const dispatch = useDispatch();
 
    const handleClick = (e) => {
-      console.log('лк', e.target)
+      //console.log('лк', e.target)
       dispatch(goToSellerInterface());
       dispatch(closeBurgerMenu())
    }

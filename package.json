@@ -6,13 +6,19 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "express": "^4.18.2",
     "gh-pages": "^5.0.0",
+    "i18next": "^22.4.11",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.0",
     "react-icons": "^4.8.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.1",
+    "react-select": "^5.7.0",
     "redux": "^4.2.0",
     "swiper": "^8.4.7",
     "web-vitals": "^2.1.4"
@@ -25,7 +31,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "server": "json-server --watch server/db.json -p 3001"
+    "server": "json-server-auth --watch server/db.json --port 3001"
   },
   "eslintConfig": {
     "extends": [

@@ -1,0 +1,93 @@
+.seller {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-color:#FFFFFF;
+}
+.wrapper, .container{
+   width: 1723px; 
+   margin: 0 auto;
+   background-color: #FFFFFF;
+}
+h3{
+   font-family: 'SF Pro Display';
+   font-style: normal;
+   font-weight: 900;
+   font-size: 30px;
+   line-height: 120%;
+   color: #000000;
+}
+.container{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 76px;
+   margin-bottom:150px;
+}
+h4{
+   font-family: 'SF Pro Display';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24%;
+   letter-spacing: 0.03em;
+   color: #000000;
+}
+.settingsMenu{
+   display: flex;
+   flex-direction: column;
+}
+.list{
+   display:flex;
+   flex-direction:column;
+   font-family: 'SF Pro Display';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 150%;
+   letter-spacing: 0.03em;
+}
+.settingsMenuItems{
+   width: 771px;
+   height: 393px;
+   left: 590px;
+   top: 387px;
+   background: #D9D9D9;
+}
+@media  screen and (max-width: 1722px)  and (min-width: 1366px){
+   .wrapper, .container{
+      width: 1366px; 
+   }
+}
+@media  screen and (max-width: 1365px)  and (min-width: 1009px){
+   .wrapper, .container{
+      width: 1009px; 
+   }
+   .settingsMenuItems{
+      width: 600px;
+      height: 300px;
+      left: 590px;
+      top: 387px;
+   }
+}
+@media  screen and (max-width: 1008px)  and (min-width: 652px){
+   .wrapper, .container{
+      width: 652px; 
+   }
+   .settingsMenuItems{
+      width: 351px;
+      height: 300px;
+   }
+}
+@media  screen and (max-width: 651px)  and (min-width: 295px){
+   .wrapper, .container{
+      width: 295px; 
+   }
+   .container{
+   display: flex;
+   flex-direction: column;
+   }
+   .settingsMenuItems{
+      width: 295px;
+      height: 300px;
+   }
+}

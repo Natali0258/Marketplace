@@ -1,0 +1,16 @@
+.checkbox{
+   /* display: flex;
+   justify-content: center; */
+   width: 15px;
+   height: 15px;
+   margin: 5px 0 0 5px;
+   /* background: #FFFFFF;
+   border: 1px solid #2264E6;
+   border-radius: 2px;
+   color: #2264E6;; */
+   /* text-align:center; */
+   /* align-items: center; */
+}
+.label_checkbox{
+   margin-left: 10px;
+}

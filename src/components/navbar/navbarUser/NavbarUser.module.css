@@ -1,12 +1,12 @@
 .header_user{
    display: flex;
    justify-content: space-between;
+   margin-top: 60px;
 }
 .navbar_nav{
    display: flex;
    justify-content: space-between;
    width: 360px;
-   margin-top: 60px;
    margin-left: 63px;
    list-style: none;
    transition:opacity 0.3s;
@@ -43,7 +43,6 @@ a:link {
 .profile{
    width: 49px;
    height: 49px;
-   margin-top: 60px;
    margin-left: 38px;
    background: #D9D9D9;
    border-radius: 50%;
@@ -55,6 +54,21 @@ a:link {
    position:absolute;
    top: 6px;
    left:6px;
+}
+.btn{
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: 0.03em;
+   color: #5A5757;
+   height: 55px;
+   padding: 10px 20px;
+   margin-left: 38px;
+   border: 1px solid #000000;
+   cursor: pointer;
+
 }
 @media  screen and (max-width: 1722px)  and (min-width: 1366px){
    .navbar_nav{

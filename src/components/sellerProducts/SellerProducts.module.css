@@ -1,0 +1,180 @@
+.products {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-color:#FFFFFF;
+}
+.wrapper{
+   width: 1723px; 
+   margin: 0 auto;
+   background-color: #FFFFFF;
+}
+h3{
+   font-family: 'SF Pro Display';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 100%;
+   color: #000000;
+}
+.form{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   margin-top: 10px;
+}
+.label, .button{
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 800;
+   font-size: 25px;
+   line-height: 30px;
+   letter-spacing: 0.03em;
+}
+.label{
+   color: #5A5757;
+   height: 25px;
+   margin-top: 10px;
+}
+.form>input{
+   width: 400px;
+   height: 30px;
+   margin: 10px 0 10px;
+}
+.sizes{
+   display:flex;
+   justify-content:start;
+   margin: 10px 0;
+}
+.size{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width: 30px;
+   height: 30px;
+   color: #aaa9a9;
+   border-radius: 8px;
+   border: 1px solid #aaa9a9;
+   margin-right:5px;
+}
+.size:hover{
+   cursor:pointer;
+}
+.btn{
+   display: flex;
+   /* justify-content: center;
+   align-self: center; */
+}
+.button_submit{
+   padding: 10px 20px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   background: #5A5757;
+   border: 1px solid #5A5757;
+   border-radius: 20px;
+   color:white;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 20px;
+   transition: transform 300ms ease;
+}
+.button_submit:hover{
+   cursor: pointer;
+   transform: scale(1.1)
+}
+.description{
+   width:700px;
+   height:100px;
+   margin: 10px 0 10px;
+}
+.checkbox{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+.label_checkbox{
+   margin-left: 10px;
+}
+@media  screen and (max-width: 1722px)  and (min-width: 1366px){
+   .wrapper{
+      width: 1366px; 
+   }
+}
+@media  screen and (max-width: 1365px)  and (min-width: 1009px){
+   .wrapper{
+      width: 1009px; 
+   }
+   .label, .button_submit{
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.03em;
+   }
+   .label{
+      height: 25px;
+      margin-top: 10px;
+   }
+   .form>input{
+      width: 300px;
+      height: 30px;
+      margin: 10px 0 10px;
+   }
+   .button_submit{
+      padding: 10px 20px;
+      margin-top: 10px;
+   }
+}
+@media  screen and (max-width: 1008px)  and (min-width: 652px){
+   .wrapper{
+      width: 652px; 
+   }
+   .label, .button_submit{
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.03em;
+   }
+   .label{
+      height: 25px;
+      margin-top: 10px;
+   }
+   .form>input{
+      width: 300px;
+      height: 25px;
+      margin: 10px 0 10px;
+   }
+   .button_submit{
+      padding: 10px 20px;
+      margin-top: 10px;
+   }
+}
+@media  screen and (max-width: 651px)  and (min-width: 295px){
+   .wrapper{
+      width: 295px; 
+   }
+   .label, .button_submit{
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.03em;
+   }
+   .label{
+      height: 25px;
+      margin-top: 10px;
+   }
+   .form>input{
+      width: 240px;
+      height: 25px;
+      margin: 10px 0 10px;
+   }
+   .button_submit{
+      padding: 10px 20px;
+      margin-top: 10px;
+   }
+}
